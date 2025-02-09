@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng ký tài khoản mới</title>
+    </head>
+    <body>
+        <form action="xuLyThongTinDangKy.php" method="post" accept-charset="utf-8"
+            enctype="multipart/form-data">
+            <h1><center><b style="color: blue; font-size: 40px;">Đăng ký du lịch</b></center></h1>
+            <table border="1" cellpadding="5" cellspacing="0" align="center" style="background-color: rgb(251, 253, 150);">
+                <tr>
+                    <td style="color: rgb(25, 105, 245);"><label for="txtHovaTen">Họ và tên</label></td>
+                    <td>
+                        <input type="text" name="txtHovaTen" id="txtHovaTen"
+                        placeholder="Mời bạn nhập họ và tên" size="33">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(25, 105, 245);"><label for="txtDiaChi">Địa chỉ</label></td>
+                    <td>
+                        <input type="text" name="txtDiaChi" id="txtDiaChi"
+                        placeholder="Mời bạn nhập địa chỉ" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(25, 105, 245);"><label for="txtDienThoai">Điện thoại</label></td>
+                    <td>
+                        <input type="text" name="txtDienThoai" id="txtDienThoai"
+                        placeholder="Mời bạn nhập số điện thoại" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(25, 105, 245);">Khách Việt Nam</td>
+                    <td>
+                        <label><input type="checkbox" name="chkVietNam" id="chkVietNam"
+                        title="Nhấn chọn vào đây nếu bạn là người Việt Nam">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(25, 105, 245);"><label for="cmbTour">Chọn tour</label></td>
+                    <td>
+                        <select name="cmbTour" id="cmbTour" title="Xin mời bạn chọn tour bạn muốn tham gia">
+                            <optgroup label="Miền Bắc">
+                            <option value="mb1" checked="checked">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="mb2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="mb3">Hà Nội - Cát Bà - Tuần Châu</option>
+                            </optgroup>
+                            <optgroup label="Miền Trung">
+                            <option value="mt1">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="mt2">Nha Trang - Đà Lạt</option>
+                            <option value="mt3">Buôn Mê Thuột - Gia Lai - Kon Tum</option>
+                            </optgroup>
+                            <optgroup label="Miền Nam">
+                            <option value="mn1">TP.HCM - Cần Thơ - Cà Mau</option>
+                            <option value="mn2">TP.HCM - Mỹ Tho</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(25, 105, 245);">Phương tiện</td>
+                    <td>
+                        <label style="color: rgb(25, 105, 245);"><input type="radio" name="rdbMayBay" id="rdbMayBay"
+                        title="Nếu bạn chọn máy bay, hãy nhấn vào đây">Máy bay
+                        </label>
+                        <label style="color: rgb(25, 105, 245);"><input type="radio" name="rdbOto" id="rdbOto"
+                        title="Nếu bạn chọn ô tô, hãy nhấn vào đây">Xe ô tô
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: 1px solid black;">
+                    <fieldset style="border-color: rgb(247, 39, 12);  width: 80%; align-content: center;margin: 0 auto;">
+                        <legend style="color: rgb(247, 39, 12);"><em>Số lượng đoàn khách</em></legend>
+                        <label for="NguoiLon" style="color: rgb(25, 105, 245);">Người lớn</label>
+                        <input type="text" id="NguoiLon" name="NguoiLon" size="6">
+                        <label for="TreEm" style="color: rgb(25, 105, 245);">Trẻ em</label>
+                        <input type="text" id="TreEm" name="TreEm" size="6">
+                    </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: rgb(25, 105, 245);">Ghi chú thêm</td>
+                    <td style="border: 1px solid black; padding-right: 2%;"><textarea style="width: 100%; height: 30px;"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" name="btnDongY" id="btnDongY" value="Đồng ý">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
